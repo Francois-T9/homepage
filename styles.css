@@ -1,0 +1,175 @@
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+
+  justify-items: center;
+
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  grid-row: 1;
+  background-color: black;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 10px; */
+
+  justify-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+.header nav {
+  grid-column: 3;
+  color: white;
+
+  width: 100%;
+
+  display: grid;
+  align-items: center;
+}
+
+.header nav ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.header nav a:first-child {
+  color: white;
+  grid-column: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header nav a:first-child:hover,
+.header nav a:last-child:hover {
+  background-color: rgb(207, 154, 84);
+}
+.header nav a:last-child {
+  color: white;
+  grid-column: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-home {
+  grid-row: 2;
+  background-color: white;
+
+  max-width: 75%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+.main-home img {
+  width: 200px;
+}
+
+.main-projects {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.projects-container .project-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.projects-container .project-content img:hover {
+  scale: 1.1;
+  transition: scale 0.5s ease-out;
+  cursor: pointer;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.project-title img {
+  width: 20px;
+}
+
+.footer {
+  grid-row: 3;
+  background-color: rgb(193, 246, 255);
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  color: black;
+  padding: 10px;
+}
+
+.footer .contact {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .contact img {
+  width: 40px;
+}
+
+.footer .contact .phone,
+.email {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-image {
+  grid-column: 2;
+}
+.footer-image img {
+  width: 400px;
+}
