@@ -14,7 +14,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
 
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
@@ -22,18 +22,22 @@
   justify-items: center;
 
   align-items: center;
+
+  background-color: var(--black);
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   grid-row: 1;
   background-color: var(--black);
+  height: 5em;
 
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
   /* padding: 10px; */
 
   justify-items: start;
+  position: sticky;
 }
 
 .logo {
@@ -90,19 +94,29 @@
 
 .main-home {
   grid-row: 2;
-  background-color: var(--lightgray);
+  background-color: var(--black);
 
   max-width: 75%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .main-home img {
-  width: 200px;
+  max-width: 200px;
+  height: auto;
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
 }
 
 .main-projects {
@@ -125,7 +139,8 @@
   justify-items: start;
 }
 
-.main-title a {
+.main-title a,
+.main-description a {
   grid-column: 3;
 
   background-color: var(--black);
@@ -216,5 +231,6 @@ button {
   grid-column: 2;
 }
 .footer-image img {
-  width: 400px;
+  max-width: 400px;
+  height: auto;
 }
