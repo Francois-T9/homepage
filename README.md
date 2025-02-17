@@ -5,7 +5,7 @@ Exercise from [_The Odin Project_](https://www.theodinproject.com/lessons/node-p
 
 ## Live view of the project
 
-🔗[Look at my homepage!]()
+🔗[Look at my homepage!](https://github.com/Francois-T9/homepage/blob/main/index.html)
 
 ## Things to be implemented
 -Responsive font size </br>
