@@ -1,14 +1,14 @@
 # Project name
-Exercise from [_The Odin Project_]() 
+Exercise from [_The Odin Project_](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage) 
 
 **This project will continue to evolve as I advance in my web development journey.**
 
 ## Live view of the project
 
-🔗[Add tasks!]()
+🔗[Look at my homepage!]()
 
 ## Things to be implemented
--item 1 </br>
--item 2 </br>
--item 3
+-Responsive font size </br>
+-Accessibility </br>
+
 
