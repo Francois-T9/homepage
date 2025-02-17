@@ -14,6 +14,7 @@
 html,
 body {
   max-width: 100vw;
+  background-color: var(--black);
 }
 
 .container {
@@ -41,9 +42,18 @@ body {
   /* padding: 10px; */
 
   justify-items: start;
+  top: 0;
   position: sticky;
 }
 
+.return-arrow {
+  grid-column: 2;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  bottom: 0;
+  position: sticky;
+}
 /* SETUP FOR MOBILE */
 
 .logo {
@@ -214,6 +224,7 @@ button {
   grid-template-columns: 1fr 1.5fr;
   color: var(--purple);
   padding: 10px;
+  height: auto;
 }
 
 .footer .contact {
