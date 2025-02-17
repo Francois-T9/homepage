@@ -32,7 +32,7 @@ body {
 }
 
 .header {
-  width: 100vw;
+  width: 75vw;
   grid-row: 1;
   background-color: var(--black);
   height: 5em;
@@ -112,12 +112,12 @@ body {
   grid-row: 2;
   background-color: var(--black);
 
-  max-width: 75%;
+  width:75vw;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  width: 100%;
+  width: 75vw;
   height: 100%;
 
   /* padding: 10px; */
@@ -135,7 +135,7 @@ body {
 }
 
 .main-projects {
-  width: 100%;
+  width: 75vw;
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 5fr;
@@ -224,6 +224,7 @@ button {
   grid-template-columns: 1fr 1.5fr;
   color: var(--purple);
   padding: 10px;
+  width: 75vw ;
   height: auto;
 }
 
@@ -257,7 +258,7 @@ button {
 }
 
 @media (max-width: 390px) {
-  /* home tab */
+
   .container {
     justify-items: start;
   }
@@ -270,10 +271,12 @@ button {
     padding: 10px;
     width: 390px;
   }
-  .footer {
+  .footer,
+  .header {
     grid-template-columns: 1fr;
     width: 370px;
     padding: 10px;
+    /* font-size: 2rem; */
   }
   /* projects tab */
 
