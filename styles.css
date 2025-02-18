@@ -112,7 +112,7 @@ body {
   grid-row: 2;
   background-color: var(--black);
 
-  width:75vw;
+  width: 75vw;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -224,7 +224,7 @@ button {
   grid-template-columns: 1fr 1.5fr;
   color: var(--purple);
   padding: 10px;
-  width: 75vw ;
+  width: 75vw;
   height: auto;
 }
 
@@ -257,8 +257,7 @@ button {
   gap: 10px;
 }
 
-@media (max-width: 390px) {
-
+@media (max-width: 440px) {
   .container {
     justify-items: start;
   }
@@ -269,8 +268,9 @@ button {
     align-items: center;
     justify-items: center;
     padding: 10px;
-    width: 390px;
+    width: 100%; /* or max-width: 100%; */
   }
+
   .footer,
   .header {
     grid-template-columns: 1fr;
